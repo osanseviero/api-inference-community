@@ -10,11 +10,13 @@ from app.main import ALLOWED_TASKS, get_pipeline
 # models are recommended for faster tests.
 TESTABLE_MODELS: Dict[str, str] = {
     "text-to-speech": "facebook/fastspeech2-en-ljspeech",
+    "automatic-speech-recognition": "facebook/xm_transformer_s2ut_800m-es-en-st-asr-bt_h1_2022",
 }
 
 
 ALL_TASKS = {
     "text-to-speech",
+    "automatic-speech-recognition",
     "audio-to-audio",
 }
 
